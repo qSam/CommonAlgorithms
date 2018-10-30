@@ -8,27 +8,8 @@
 //   vowels('Why?') --> 0
 
 function vowels(str) {
-  let vowelCounter = 0;
-  for (let char of str.toLowerCase()) {
-    switch (char) {
-      case 'a':
-        vowelCounter++;
-        break;
-      case 'e':
-        vowelCounter++;
-        break;
-      case 'i':
-        vowelCounter++;
-        break;
-      case 'o':
-        vowelCounter++;
-        break;
-      case 'u':
-        vowelCounter++;
-        break;
-    }
-  }
-  return vowelCounter;
+  const matches = str.match(/[aeiou]/gi);
+  return matches ? matches.length : 0;
 }
 
 module.exports = vowels;
