@@ -29,6 +29,6 @@ function slowFib(n) {
   return fib(n - 1) + fib(n - 2);
 }
 
-let fib = memoize(slowFib);
+const fib = memoize(slowFib);
 
 module.exports = fib;
