@@ -164,7 +164,7 @@ describe('GetAt', () => {
   });
 });
 
-describe.skip('RemoveAt', () => {
+describe('RemoveAt', () => {
   test('removeAt doesnt crash on an empty list', () => {
     const l = new List();
     expect(() => {
@@ -202,6 +202,7 @@ describe.skip('RemoveAt', () => {
     l.insertLast(4);
     expect(l.getAt(1).data).toEqual(2);
     l.removeAt(1);
+    //Putting some comments here
     expect(l.getAt(1).data).toEqual(3);
   });
 
